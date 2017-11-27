@@ -173,26 +173,15 @@ jsPlumb.ready(function() {
 	
 });
 
-$(".circle").on("click", function(){	
+var flag = false;
+$(".circle").on("touchcancel click", function(){
 	$("#"+this.id+"").toggleClass("willGrow");
 	jsPlumb.setDraggable(this.id, false);
 	$("#circle-wrapper").addClass("willChangeColor");
 	$(".circle").addClass("willChangeColor");
 });
 
-$(".circle").on("touchend", function(){	
-	$("#"+this.id+"").toggleClass("willGrow");
-	jsPlumb.setDraggable(this.id, false);
-	$("#circle-wrapper").addClass("willChangeColor");
-	$(".circle").addClass("willChangeColor");
-});
-
-$(".circle").on("mouseover", function() {
-	document.getElementById("main").style.textTransform = "none";
-	document.getElementById("maintext").innerHTML = setMainText(this.id);
-});
-
-$(".circle").on("touchstart", function() {
+$(".circle").on("touchmove mouseover", function() {
 	document.getElementById("main").style.textTransform = "none";
 	document.getElementById("maintext").innerHTML = setMainText(this.id);
 });
