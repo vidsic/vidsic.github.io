@@ -180,19 +180,7 @@ $(".circle").on("click", function(){
 	$(".circle").addClass("willChangeColor");
 });
 
-$(".circle").on("touchend", function(){	
-	$("#"+this.id+"").toggleClass("willGrow");
-	jsPlumb.setDraggable(this.id, false);
-	$("#circle-wrapper").addClass("willChangeColor");
-	$(".circle").addClass("willChangeColor");
-});
-
 $(".circle").on("mouseover", function() {
-	document.getElementById("main").style.textTransform = "none";
-	document.getElementById("maintext").innerHTML = setMainText(this.id);
-});
-
-$(".circle").on("touchstart", function() {
 	document.getElementById("main").style.textTransform = "none";
 	document.getElementById("maintext").innerHTML = setMainText(this.id);
 });
