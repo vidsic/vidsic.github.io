@@ -173,8 +173,7 @@ jsPlumb.ready(function() {
 	
 });
 
-var flag = false;
-$(".circle").on("touchcancel click", function(){
+$(".circle").on("touchend touchmove touchcancel click", function(){
 	$("#"+this.id+"").toggleClass("willGrow");
 	jsPlumb.setDraggable(this.id, false);
 	$("#circle-wrapper").addClass("willChangeColor");
