@@ -111,6 +111,11 @@ header .header-menu-content ul a:hover {
 	-webkit-transition: all 500ms ease-in-out;
 	transition: all 500ms ease-in-out;
 }
+#main.willChangeColor {
+	color: white;
+	-webkit-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
 
 #circle-wrapper {
 	height: 90vh;
@@ -127,32 +132,60 @@ header .header-menu-content ul a:hover {
     height: 22vh;
     border-radius: 50%;
 	float: left;
+    display: inline-block;
 }
 .circle.willChangeColor {
-	background: white !important;
-	-webkit-transition: all 900ms ease-in-out;
-	transition: all 900ms ease-in-out;
+	opacity: 0;
+	-webkit-transition: all 600ms ease-in-out;
+	transition: all 600ms ease-in-out;
 }
 .circle:hover {
 	z-index: 10;
 	cursor: pointer;
+}
+.circle:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.circle .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    margin-left: -175px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 300ms;
+	font-size: 20px;
+	box-shadow: 0px 0px 2px white;
 }
 
 
 /* Team-specific transitions */
 
 #team1 {
-	background: red;
-	background-size: contain;
-	top: 12%;
+	background: #140001;
+	background-size: cover;
+	top: 13%;
 	left: 11%;
+	box-shadow: 0px 0px 10px #140001;
 }
 #team1.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #140001;
     border-radius: 0%;
 	top: 0% !important;
 	left: 0% !important;
@@ -161,17 +194,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team2 {
-	background: orange;
-	background-size: contain;
-	top: 10%;
+	background: #E5E0DC;
+	background-size: cover;
+	top: 11%;
 	left: 45%;
+	box-shadow: 0px 0px 10px #E5E0DC;
 }
 #team2.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #E5E0DC;
     border-radius: 0%;
 	top: 0% !important;
 	left: 0% !important;
@@ -180,17 +214,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team3 {
-	background: yellow;
-	background-size: contain;
+	background: #210A04;
+	background-size: cover;
 	top: 18%;
 	right: 5%;
+	box-shadow: 0px 0px 10px #210A04;
 }
 #team3.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #210A04;
     border-radius: 0%;
 	top: 0% !important;
 	right: 0% !important;
@@ -200,9 +235,10 @@ header .header-menu-content ul a:hover {
 
 #team4 {
 	background: green;
-	background-size: contain;
+	background-size: cover;
 	top: 37%;
 	left: 2%;
+	box-shadow: 0px 0px 10px white;
 }
 #team4.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
@@ -218,17 +254,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team5 {
-	background: blue;
-	background-size: contain;
+	background: #3B2917;
+	background-size: cover;
 	top: 34%;
 	left: 29%;
+	box-shadow: 0px 0px 10px #3B2917;
 }
 #team5.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #3B2917;
     border-radius: 0%;
 	top: 0% !important;
 	left: 0% !important;
@@ -237,17 +274,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team6 {
-	background: pink;
-	background-size: contain;
+	background: #1F1A15;
+	background-size: cover;
 	top: 29%;
 	right: 25%;
+	box-shadow: 0px 0px 10px #1F1A15;
 }
 #team6.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #1F1A15;
     border-radius: 0%;
 	top: 0% !important;
 	right: 0% !important;
@@ -257,9 +295,10 @@ header .header-menu-content ul a:hover {
 
 #team7 {
 	background: purple;
-	background-size: contain;
+	background-size: cover;
 	bottom: 19%;
 	left: 17%;
+	box-shadow: 0px 0px 10px white;
 }
 #team7.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
@@ -275,17 +314,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team8 {
-	background: brown;
-	background-size: contain;
+	background: #210A04;
+	background-size: cover;
 	bottom: 13%;
 	left: 47%;
+	box-shadow: 0px 0px 10px #210A04;
 }
 #team8.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #210A04;
     border-radius: 0%;
 	bottom: 0% !important;
 	left: 0% !important;
@@ -295,9 +335,10 @@ header .header-menu-content ul a:hover {
 
 #team9 {
 	background: grey;
-	background-size: contain;
+	background-size: cover;
 	bottom: 21%;
 	right: 10%;
+	box-shadow: 0px 0px 10px white;
 }
 #team9.willGrow {
 	-webkit-transition: all 900ms ease-in-out;

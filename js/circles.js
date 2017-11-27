@@ -1,4 +1,10 @@
+$("#team1").css("background-image", "url(img/geige.jpg)");
+$("#team2").css("background-image", "url(img/e-gitarre.jpg)");
+$("#team3").css("background-image", "url(img/klavier.jpg)");
+
+$("#team5").css("background-image", "url(img/saz.jpg)");
 $("#team6").css("background-image", "url(img/beethoven.jpg)");
+$("#team8").css("background-image", "url(img/klavier2.jpg)");
 
 jsPlumb.ready(function() {
 	jsPlumb.draggable("team1", {containment:true});
@@ -173,14 +179,15 @@ jsPlumb.ready(function() {
 	
 });
 
-$(".circle").on("touchend touchmove touchcancel click", function(){
+$(".circle").on("touchend click", function(){
 	$("#"+this.id+"").toggleClass("willGrow");
 	jsPlumb.setDraggable(this.id, false);
 	$("#circle-wrapper").addClass("willChangeColor");
 	$(".circle").addClass("willChangeColor");
+	$("#main").addClass("willChangeColor");
 });
 
-$(".circle").on("touchmove mouseover", function() {
+$(".circle").on("touchmove", function() {
 	document.getElementById("main").style.textTransform = "none";
 	document.getElementById("maintext").innerHTML = setMainText(this.id);
 });
