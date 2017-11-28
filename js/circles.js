@@ -1,10 +1,12 @@
 $("#team1").css("background-image", "url(img/geige.jpg)");
 $("#team2").css("background-image", "url(img/e-gitarre.jpg)");
 $("#team3").css("background-image", "url(img/klavier.jpg)");
-
+$("#team4").css("background-image", "url(img/metal.jpg)");
 $("#team5").css("background-image", "url(img/saz.jpg)");
 $("#team6").css("background-image", "url(img/beethoven.jpg)");
+$("#team7").css("background-image", "url(img/eminem.jpg)");
 $("#team8").css("background-image", "url(img/klavier2.jpg)");
+$("#team9").css("background-image", "url(img/zayn.jpg)");
 
 jsPlumb.ready(function() {
 	jsPlumb.draggable("team1", {containment:true});

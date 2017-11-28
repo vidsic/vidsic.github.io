@@ -234,18 +234,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team4 {
-	background: green;
+	background: #333;
 	background-size: cover;
 	top: 37%;
 	left: 2%;
-	box-shadow: 0px 0px 10px white;
+	box-shadow: 0px 0px 10px #333;
 }
 #team4.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #333;
     border-radius: 0%;
 	top: 0% !important;
 	left: 0% !important;
@@ -294,18 +294,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team7 {
-	background: purple;
+	background: #090A0C;
 	background-size: cover;
 	bottom: 19%;
 	left: 17%;
-	box-shadow: 0px 0px 10px white;
+	box-shadow: 0px 0px 10px #090A0C;
 }
 #team7.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #090A0C;
     border-radius: 0%;
 	bottom: 0% !important;
 	left: 0% !important;
@@ -334,18 +334,18 @@ header .header-menu-content ul a:hover {
 }
 
 #team9 {
-	background: grey;
+	background: #2E3034;
 	background-size: cover;
 	bottom: 21%;
 	right: 10%;
-	box-shadow: 0px 0px 10px white;
+	box-shadow: 0px 0px 10px #2E3034;
 }
 #team9.willGrow {
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
 	height: 100vh;
 	width: 100vw;
-	background: white;
+	background: #2E3034;
     border-radius: 0%;
 	bottom: 0% !important;
 	right: 0% !important;
