@@ -7,6 +7,16 @@
 
 /* General styling */
 
+a:link, a:visited {
+	color: #000;
+	color: #222;
+	text-decoration: none;
+}
+
+a:link:active, a:visited:active {
+	color: #444;
+}
+
 html,
 body {
 	padding: 0;
@@ -14,7 +24,7 @@ body {
 }
 
 body {
-	background: #404c54;
+	background: #444;
 	font-family: "Raleway", sans-serif;
 }
 
@@ -99,6 +109,72 @@ header .header-menu-content ul a:hover {
 	position: fixed;
 	-webkit-transition: all 900ms ease-in-out;
 	transition: all 900ms ease-in-out;
+}
+
+.impressum {
+	color: white;
+	margin-left: 65px;
+	margin-top: 40px;
+	margin-right: 10%;
+	margin-bottom: 100px;
+}
+
+
+.container {
+	float: left;
+	width: 100%;
+}
+
+.team-item {
+	height: 200px;
+	line-height: 200px;
+	background: white;
+	margin-bottom: 100px;
+	width: 100%;
+	clear: left;
+	margin: 0 auto;
+	font-size: 30px;
+	text-align: center;
+}
+.team-item p {
+	font-size: 26px;
+	margin: auto;
+}
+
+.video-item {
+	height: auto;
+	background: #333;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	clear: left;
+	font-size: 30px;
+	text-align: center;
+}
+
+#team-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/piano.jpg);
+	background-size: cover;
+}
+#team1-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/geige.jpg);
+	background-size: cover;
+}
+
+#largeheader {
+	font-size: 200%;
 }
 
 #main {

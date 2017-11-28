@@ -187,6 +187,7 @@ $(".circle").on("touchend click", function(){
 	$("#circle-wrapper").addClass("willChangeColor");
 	$(".circle").addClass("willChangeColor");
 	$("#main").addClass("willChangeColor");
+	setTimeout(function(){window.location.href='pages/teams.html'},1000);
 });
 
 $(".circle").on("touchmove", function() {
