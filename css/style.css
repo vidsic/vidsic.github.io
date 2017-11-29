@@ -135,9 +135,13 @@ header .header-menu-content ul a:hover {
 	margin: 0 auto;
 	font-size: 30px;
 	text-align: center;
+	overflow: visible;
 }
 .team-item p {
 	font-size: 26px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	line-height: 1;
 	margin: auto;
 }
 
@@ -170,6 +174,86 @@ header .header-menu-content ul a:hover {
 	text-align: center;
 	width: 100%;
 	background-image: url(../img/geige.jpg);
+	background-size: cover;
+}
+#team2-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/e-gitarre.jpg);
+	background-size: cover;
+}
+#team3-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/klavier.jpg);
+	background-size: cover;
+}
+#team4-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/metal.jpg);
+	background-size: cover;
+}
+#team5-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/saz.jpg);
+	background-size: cover;
+}
+#team6-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/beethoven.jpg);
+	background-size: cover;
+}
+#team7-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/eminem.jpg);
+	background-size: cover;
+}
+#team8-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/klavier2.jpg);
+	background-size: cover;
+}
+#team9-header-img {
+	padding-top: 150px;
+	height: 300px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-image: url(../img/zayn.jpg);
 	background-size: cover;
 }
 

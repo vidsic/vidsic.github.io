@@ -181,13 +181,15 @@ jsPlumb.ready(function() {
 	
 });
 
+var teamname;
 $(".circle").on("touchend click", function(){
+	teamname = this.id;
 	$("#"+this.id+"").toggleClass("willGrow");
 	jsPlumb.setDraggable(this.id, false);
 	$("#circle-wrapper").addClass("willChangeColor");
 	$(".circle").addClass("willChangeColor");
 	$("#main").addClass("willChangeColor");
-	setTimeout(function(){window.location.href='pages/teams.html'},1000);
+	setTimeout(function(){window.location.href='pages/'+teamname+'.html'},1000);
 });
 
 $(".circle").on("touchmove", function() {
